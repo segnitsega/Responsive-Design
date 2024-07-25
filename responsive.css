@@ -1,0 +1,372 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+:root{
+    --font-family: Arial, sans-serif;
+    --color:white;
+    --color2:#FF6565;
+    --color3: #007BFF;
+}
+body{
+    font-size: 1.1em;
+    font-family: var(--font-family);
+}
+header{
+    display:flex;
+    flex-direction: column;
+    background-image: url(images/images/headphones_hero_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    font-family: var(--font-family);
+    padding-bottom: 5em;
+}
+.headphones_logo{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    height: 2em;
+    margin-top: 1em;
+}
+.side_navs{
+    display: none;
+    color: var(--color);
+}
+.hamburger{
+    color: var(--color);
+    margin-left: 1em;
+    margin-top: -1em;
+    cursor: pointer;
+}
+.hamburger:active{
+    .side_navs{
+        display: block;
+    }
+}
+.first_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60%;
+    color: var(--color);
+    
+}
+.first_text h1{
+    margin-left: 1em;
+    margin-right: 1em;
+} 
+.first_text p{
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: -1em;
+    line-height: 1.5em;
+}
+.button1{
+    font-size: 20px;
+    height: 48px;
+    width: 160px;
+    margin-top: 2em;
+    border: none;
+    border-radius: 20em;
+    background-color: var(--color2);
+    color: var(--color);
+    text-transform:capitalize ;
+}
+.second_text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--color);
+    margin-top:20%;
+    margin-left: 3%;
+    margin-right: 3%;
+    line-height: 1.5em;
+}
+.what_we_do{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20% 5% 0 5%;
+    line-height: 1.5em;
+}
+.what_we_do div{
+    margin-top: 10%;
+}
+.icons{
+    color: var(--color2);
+}
+.our_results{
+    background-image: url(images/images/headphones_hero_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    color: var(--color);
+    margin-top: 20%;
+    margin-bottom: 20%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 1.5em;
+}
+.pentagone{
+    display: flex;
+    flex-direction: column;
+    height: 10em;
+    margin-top: 5em;
+}
+.percents{
+    margin-top: -7em;
+}
+.underline-container{
+    display: flex;
+    flex-direction: column;
+    width: 8em;
+    margin: auto;
+    align-items: center;
+}
+.underline-container h2{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 2em;
+}
+.textarea-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 1.1em;
+    margin-bottom: 2em;
+}
+.input-container input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+}
+.textarea-container textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+}
+.input-container label{
+    position: absolute;
+    transition: 0.25s;
+    margin: -10px 0;
+}
+.textarea-container label{
+    position: absolute;
+    transition: 0.25s;
+    padding: 10px 0;
+}
+.textarea-container textarea:focus{
+    border-bottom: 0.2em solid var(--color3);
+}
+.input-container input:focus{
+    border-bottom: 0.2em solid var(--color3);
+ }
+ .input-container input:focus + label{
+    top: -1.3em;
+    font-size: 0.8em;
+    color: #007BFF;
+ }
+ .textarea-container textarea:focus + label{
+    top: -2em;
+    padding-bottom: 2em;
+    font-size: 0.8em;
+    color: #007BFF;
+ }
+.underline-container button{
+    
+    height: 48px;
+    width: 160px;
+    border: none;
+    border-radius: 20em;
+    background-color: var(--color2);
+    color: var(--color);
+    text-transform:capitalize ;
+    margin-bottom: 3em;
+}
+
+footer{
+    background-color: #071629;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.footer_logo{
+    height: 2em;
+    margin: 1em;
+}
+footer div{
+    display: flex;
+    gap: 1.5em;
+    color: var(--color);
+}
+footer p{
+    display: flex;
+    color: grey;
+}
+@media (min-width: 768px){
+    .logo{
+        font-size: smaller;
+        height: 4em;
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+    .side_navs{
+        display: flex;
+        margin-left: auto;
+        gap: 2em;
+        margin-right: 2em;
+        margin-top: 1em;
+        font-size: smaller;
+    }
+    .hamburger{
+        display: none;
+        /* margin-left: 2em;
+        margin-top: -1.5em; */
+    }
+    .first_text p{
+        font-size:x-large;
+    }
+    .button1, .underline-container button{
+        height: 80px;
+        width: 240px;
+        font-size: 27px;
+    }
+    .first_two_pentagones{
+        display: flex;
+        gap: 8em;
+    }
+    .second_two_pentagones{
+        display: flex;
+        gap: 8em;
+    }
+    .percents{
+        margin-top: 7em;
+        margin-left: -16em;
+    }
+}
+@media (min-width: 1024px){
+    .side_navs{
+        gap: 3em;
+        margin-right: 4em;
+        margin-top: 2em;
+        font-size: larger;
+    }
+    .logo{
+        height: 4em;
+        margin-top: 3em;
+        margin-left: 3em;
+    }
+    .first_text h1{
+        margin-top: -7em;
+        font-size: 40px;
+    } 
+    .first_text p{
+        margin-top: 0.2em;
+        font-size: 32px;
+        line-height: 1.5em;
+    }
+    .second_text{
+        font-size: 32px;
+    }
+    .what_we_do{
+        font-size: 32px;
+    }
+    .our_results{
+        font-size: 32px;
+    }
+    
+
+    .underline-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    align-items: center;
+}
+.underline-container h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 4em;
+}
+.input-container{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 4em;
+}
+.textarea-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 1.1em;
+    margin-bottom: 4em;
+}
+
+
+.input-container label{
+    font-size: 24px;
+}
+.textarea-container label{
+    font-size: 24px;
+    padding: 0px 0;
+}
+
+ .input-container input:focus + label{
+    top: -1.3em;
+    font-size: 0.8em;
+    color: #007BFF;
+ }
+
+ .textarea-container textarea:focus + label{
+    top: -2em;
+    padding-bottom: 2em;
+    font-size: 0.8em;
+    color: #007BFF;
+ }
+
+.underline-container button{   
+    height: 60px;
+    width: 240px;
+    margin-bottom: 6em;
+    margin-left: 2em;
+}
+footer{
+    gap: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.footer_logo{
+    height: 4em;
+}
+footer div{
+    gap: 3em;
+    font-size: 24px;
+}
+footer p{
+    font-size: 24px;
+}
+}
+
